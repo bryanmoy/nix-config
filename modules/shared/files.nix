@@ -34,9 +34,9 @@ in
   "Personal/.gitconfig" = {
     text = ''
     [user]
-	  	name = Bryan Moy
-	  	email = dev@bryanmoy.com
-	  	signingkey = ${liguriaPublicKey}
+    	name = Bryan Moy
+    	email = dev@bryanmoy.com
+    	signingkey = ${liguriaPublicKey}
     '';
   };
 
@@ -45,7 +45,7 @@ in
     [user]
     	name = Bryan Moy
     	email = bryan.moy@qonto.com
-	  	signingkey = ${v270nw34lgPublicKey}
+    	signingkey = ${v270nw34lgPublicKey}
 
     [init]
     	defaultBranch = "master"
