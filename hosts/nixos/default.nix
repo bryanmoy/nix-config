@@ -28,15 +28,15 @@ let user = "bryanmoy";
   };
 
   # Set your time zone.
-  time.timeZone = "America/New_York";
+  time.timeZone = "Europe/Paris";
 
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
   networking = {
-    hostName = "%HOST%"; # Define your hostname.
+    hostName = "calabria"; # Define your hostname.
     useDHCP = false;
-    interfaces."%INTERFACE%".useDHCP = true;
+    interfaces.enp0s1.useDHCP = true;
   };
 
   # Turn on flag for proprietary software
@@ -91,7 +91,7 @@ let user = "bryanmoy";
 
       # Turn Caps Lock into Ctrl
       layout = "us";
-      xkbOptions = "ctrl:nocaps";
+      # xkbOptions = "ctrl:nocaps";
 
       # Better support for general peripherals
       libinput.enable = true;
@@ -100,7 +100,6 @@ let user = "bryanmoy";
     # Let's be able to SSH into this machine
     openssh.enable = true;
 
-    # Sync state between machines
     # Sync state between machines
     syncthing = {
       enable = true;
