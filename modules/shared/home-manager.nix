@@ -108,6 +108,11 @@ in
     settings = {};
   };
 
+  atuin = {
+    enable = true;
+    settings = {};
+  };
+
   git = {
     enable = true;
     lfs = {
