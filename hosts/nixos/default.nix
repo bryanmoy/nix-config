@@ -85,9 +85,9 @@ let user = "bryanmoy";
       };
 
       # Tiling window manager
-      windowManager.bspwm = {
-        enable = true;
-      };
+      # windowManager.bspwm = {
+      #   enable = true;
+      # };
 
       # Turn Caps Lock into Ctrl
       layout = "us";
